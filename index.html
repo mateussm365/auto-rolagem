@@ -1,23 +1,50 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <title>Home</title>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width" />
-    <!--
+
+<head>
+  <title>Home</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width" />
+  <!--
       Need a visual blank slate?
       Remove all code in `styles.css`!
     -->
-    <link rel="stylesheet" href="styles.css" />
-    <script type="module" src="script.js"></script>
-  </head>
-  <body>
-    <nav>
-      <a href="/" aria-current="page">Home</a>
-      <a href="/page2.html">Other page</a>
-    </nav>
-    <main>
-      <h1>Home page</h1>
-    </main>
-  </body>
+  <link rel="stylesheet" href="styles.css" />
+  <script type="module" src="script.js"></script>
+</head>
+
+<body>
+  <nav>
+    <p id="Menu">Menu</p>
+    <button class="oculto" onclick="rolagem('int')">Início</button>
+    <button class="oculto" onclick="rolagem('sec1')">Seção 1</button>
+    <button class="oculto" onclick="rolagem('sec2')">Seção 2</button>
+    <button class="oculto" onclick="rolagem('contatos')">Contatos</button>
+  </nav>
+
+  <main>
+    <div id="init"><br>
+      <h1>Página inicial</h1>
+      <p>Texto sobre algo legal</p>
+    </div>
+    <div id="sec1"><br>
+      <h2>Primeira seção do site</h2>
+      <p>Aqui tem alguma coisa descrevendo o site em questão</p>
+    </div>
+    <div id="sec2"><br>
+      <h2>Segunda seção do site</h2>
+      <p>Aqui vem uma galeria de imagens</p>
+      <div id="grid_imagens">
+        <img src="IMG/Pollux.jpg" alt="Pollux com uma moeda na mão" />
+        <img src="IMG/Eggzy.gif" alt="Eggzy rodando" />
+        <img src="IMG/Primus.jpg" alt="Primus em frente a servidores" />
+        <img src="IMG/Thais.jpg" alt="Thais segurando uma placa" />
+      </div>
+    </div>
+    <div id="contato"><br>
+      <p>Contatos><br>Telefone<br>Email<br>Redes sociais<br>@2025</p>
+    </div>
+  </main>
+</body>
+
 </html>

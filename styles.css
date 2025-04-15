@@ -18,6 +18,8 @@ nav {
   gap: 0.5rem;
   border-bottom: solid 1px #aaa;
   background-color: #eee;
+  position: sticky;
+  top: 0;
 }
 
 nav a {
@@ -43,4 +45,40 @@ main {
 h1 {
   font-weight: bold;
   font-size: 1.5rem;
+}
+
+#grid_imagens {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+@media screen and (max-width:800px) {
+  #grid-imagens {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  nav {
+    flex-direction: column;
+    height: auto;
+  }
+
+  nav button {
+    width: 80vw;
+  }
+
+}
+
+img {
+  width: 45vw;
+  max-width: auto;
+  margin: 1vw;
+}
+
+nav:hover p,
+nav .oculto {
+  display: none
+}
+
+nav:hover button {
+  display: inline-block;
 }
