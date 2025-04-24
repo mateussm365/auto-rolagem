@@ -82,3 +82,7 @@ nav .oculto {
 nav:hover button {
   display: inline-block;
 }
+
+.fundo_img {
+  position: relative
+}
