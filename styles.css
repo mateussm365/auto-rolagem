@@ -86,3 +86,21 @@ nav:hover button {
 .fundo_img {
   position: relative
 }
+
+.overlay-text{
+  position: absolute; /*posiciona o overlay*/
+  background-color: rgba(0,0,0,0.8); /*cor de fundo*/
+  color:#eee; /*cor clara para o texto*/
+  top:0; /*alinha a div com o topo da div fundo_img*/
+  opacity: 0; /*esconde essa div, fazendo ela transparente*/
+  display: flex; /* para centralizar o texto*/
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  transition: opacity 0.5s ease; /* cria um efeito de transição da cor do fundo*/
+}
+
+.overlay-text:hover{
+  transition: opacity 0.5s ease;
+  opacity: 1;
+}
