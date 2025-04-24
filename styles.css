@@ -20,6 +20,7 @@ nav {
   background-color: #eee;
   position: sticky;
   top: 0;
+  z-index: 1000;
 }
 
 nav a {
@@ -103,4 +104,8 @@ nav:hover button {
 .overlay-text:hover{
   transition: opacity 0.5s ease;
   opacity: 1;
+}
+
+.image-container{
+  margin:auto;
 }
